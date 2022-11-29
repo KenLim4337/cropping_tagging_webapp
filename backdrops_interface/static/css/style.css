@@ -5,9 +5,31 @@
 
 
 #display-image{
-  width: 400px;
-  height: 225px;
   border: 1px solid black;
   background-position: center;
   background-size: cover;
+  max-width: 100%;
+}
+
+#display-image img{
+  max-width: 100%;
+} 
+
+.result {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.result-photo {
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+}
+
+.result-photo img {
+  width: 100%;
+}
+
+.photo-header {
+  font-weight: bold;
 }

@@ -4,11 +4,31 @@
 {% block title %} Select areas of interest {% endblock %}
 
 {% block content %}
+<div>
     <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
 
     <img id="display-image" src="">
- </div> 
+</div> 
 
- <button id="save">Crop it!</button>
+
+<h3>Cropped Areas</h3>
+<div id="crop-data">
+
+</div>
+
+<select name="searchType" id="searchType">
+    <option value="1">AND</option>
+    <option value="2">OR</option>
+</select>
+
+<button id="save">Search Images</button>
+
+<h3>Image Matching Results</h3>
+<div id="image-results">
+</div>
+
+
+
+{% csrf_token %}
 
 {% endblock %}

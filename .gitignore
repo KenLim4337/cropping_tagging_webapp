@@ -1,0 +1,9 @@
+*/fixtures
+settings.py
+*/__pycache__
+*/migrations
+*/models
+*/models/*
+*.h5
+db.sqlite3
+db*
